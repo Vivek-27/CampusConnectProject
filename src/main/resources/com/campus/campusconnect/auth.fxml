@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="800.0" prefWidth="1280.0" snapToPixel="false" styleClass="mainFxmlClass" stylesheets="@../../../styles/auth.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.campus.campusconnect.AuthController">
+   <children>
+      <Pane layoutX="30.0" layoutY="14.0" prefHeight="543.0" prefWidth="885.0" styleClass="left_wrapper" stylesheets="@../../../styles/auth.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="586.0" layoutY="124.0" prefHeight="555.0" prefWidth="596.0" style="-fx-background-color: white; -fx-background-radius: 16px;">
+               <children>
+                  <ImageView blendMode="MULTIPLY" fitHeight="664.0" fitWidth="627.0" layoutX="-19.0" layoutY="-37.0" pickOnBounds="true" preserveRatio="true" styleClass="bgImage">
+                     <image>
+                        <Image url="@../../../../java/com/campus/campusconnect/images/3D%20illustrations.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="120.0" fitWidth="115.0" layoutX="269.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <image>
+                  <Image url="@../../../../java/com/campus/campusconnect/images/logo.png" />
+               </image>
+            </ImageView>
+            <Label blendMode="LIGHTEN" layoutX="171.0" layoutY="334.0" prefHeight="280.0" prefWidth="327.0" text="CRAFTING IMMERSIVE AND DIGITAL EXPERICENCE" textAlignment="CENTER" textFill="#fcfcfc" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="Impact" size="45.0" />
+               </font>
+            </Label>
+            <Pane id="wrapper" fx:id="registerScreen" layoutX="751.0" layoutY="166.0" prefHeight="471.0" prefWidth="290.0" style="-fx-border-radius: 12px; -fx-background-radius: 12px; -fx-background-color: black; -fx-border-color: white;" styleClass="wrapper" stylesheets="@../../../styles/auth.css">
+               <children>
+                  <Group layoutX="58.0" layoutY="35.0">
+                     <children>
+                        <Label layoutX="-4.0" layoutY="-2.0" prefHeight="27.0" prefWidth="181.0" styleClass="top_text" stylesheets="@../../../styles/auth.css" text="Create your account">
+                           <font>
+                              <Font name="Impact" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <textFill>
+                              <LinearGradient endX="0.8147447438231038" endY="0.6389414006685714" startX="0.8166351886237276" startY="0.7258979341258174">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="0.48235294222831726" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="46.0" layoutY="30.0" styleClass="top_text_small" stylesheets="@../../../styles/auth.css" text="It's free and easy" textFill="#f4f4f4">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </Group>
+                  <VBox layoutX="28.0" layoutY="107.0" spacing="15.0">
+                     <children>
+                        <Group>
+                           <children>
+                              <Label styleClass="inputLabel" stylesheets="@../../../styles/auth.css" text="Your  name" textFill="#f4f4f4">
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </Label>
+                              <TextField id="input" fx:id="filedName" focusTraversable="false" layoutX="6.0" layoutY="20.0" onMouseClicked="#removeInvalidErr" prefHeight="25.0" prefWidth="228.0" promptText="Enter your name" styleClass="input" stylesheets="@../../../styles/auth.css">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </Group>
+                        <Group>
+                           <children>
+                              <Label styleClass="inputLabel" stylesheets="@../../../styles/auth.css" text="E-mail" textFill="#f4f4f4">
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </Label>
+                              <TextField id="input" fx:id="filedEmail" focusTraversable="false" layoutX="6.0" layoutY="20.0" onMouseClicked="#removeInvalidErr" prefHeight="25.0" prefWidth="228.0" promptText="Type your e-mail or phone number" styleClass="input" stylesheets="@../../../styles/auth.css">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </Group>
+                        <Group>
+                           <children>
+                              <PasswordField id="input" fx:id="filedPassword" focusTraversable="false" layoutX="6.0" layoutY="19.0" onMouseClicked="#removeInvalidErr" prefHeight="27.0" prefWidth="228.0" promptText="Type your password" styleClass="input" stylesheets="@../../../styles/auth.css" />
+                              <Label styleClass="inputLabel" stylesheets="@../../../styles/auth.css" text="Password" textFill="#f4f4f4">
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </Group>
+                        <Group layoutX="10.0" layoutY="73.0">
+                           <children>
+                              <Label styleClass="inputLabel" stylesheets="@../../../styles/auth.css" text="Campus" textFill="#f4f4f4">
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </Label>
+                              <ComboBox fx:id="comboBoxCampus" layoutX="6.0" layoutY="21.0" prefHeight="25.0" prefWidth="228.0" styleClass="input" stylesheets="@../../../styles/auth.css" />
+                           </children>
+                        </Group>
+                     </children>
+                  </VBox>
+                  <Button id="button" layoutX="31.0" layoutY="385.0" mnemonicParsing="false" onMouseClicked="#registerUser" prefHeight="25.0" prefWidth="228.0" stylesheets="@../../../styles/auth.css" text="Register" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="invalidEP" layoutX="37.0" layoutY="87.0" prefHeight="15.0" prefWidth="220.0" textAlignment="CENTER" textFill="RED">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="alerady_have_account" layoutX="73.0" layoutY="433.0" onMouseClicked="#switchScene" text="Already have an account?" textFill="#ff8000" />
+               </children>
+            </Pane>
+            <Pane id="wrapper" fx:id="loginScreen" layoutX="751.0" layoutY="238.0" prefHeight="355.0" prefWidth="290.0" style="-fx-border-radius: 12px; -fx-background-radius: 12px; -fx-background-color: black; -fx-border-color: white;" styleClass="wrapper" stylesheets="@../../../styles/auth.css" visible="false">
+               <children>
+                  <Group layoutX="58.0" layoutY="35.0">
+                     <children>
+                        <Label layoutX="-8.0" layoutY="-1.0" prefHeight="27.0" prefWidth="189.0" styleClass="top_text" stylesheets="@../../../styles/auth.css" text="Login to your account">
+                           <font>
+                              <Font name="Impact" size="21.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <textFill>
+                              <LinearGradient endX="0.8128544134994536" endY="0.6616257611655106" startX="0.8156899810964083" startY="0.7523629440026383">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="0.48235294222831726" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="46.0" layoutY="30.0" styleClass="top_text_small" stylesheets="@../../../styles/auth.css" text="It's free and easy" textFill="#f4f4f4">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </Group>
+                  <VBox layoutX="28.0" layoutY="107.0" spacing="15.0">
+                     <children>
+                        <Group>
+                           <children>
+                              <Label styleClass="inputLabel" stylesheets="@../../../styles/auth.css" text="E-mail or phone number" textFill="#f4f4f4">
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </Label>
+                              <TextField id="input" fx:id="filedEmailLogin" focusTraversable="false" layoutX="6.0" layoutY="20.0" onMouseClicked="#removeInvalidErr" prefHeight="25.0" prefWidth="228.0" promptText="Type your e-mail or phone number" styleClass="input" stylesheets="@../../../styles/auth.css">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </Group>
+                        <Group>
+                           <children>
+                              <PasswordField id="input" fx:id="filedPasswordLogin" focusTraversable="false" layoutX="6.0" layoutY="19.0" prefHeight="27.0" prefWidth="228.0" promptText="Type your password" styleClass="input" stylesheets="@../../../styles/auth.css" />
+                              <Label styleClass="inputLabel" stylesheets="@../../../styles/auth.css" text="Password" textFill="#f4f4f4">
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </Group>
+                     </children>
+                  </VBox>
+                  <Button id="button" layoutX="31.0" layoutY="261.0" mnemonicParsing="false" onMouseClicked="#loginUser" prefHeight="25.0" prefWidth="228.0" stylesheets="@../../../styles/auth.css" text="Login" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="invalidEPLogin" layoutX="50.0" layoutY="92.0" prefHeight="15.0" prefWidth="207.0" textAlignment="CENTER" textFill="RED">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="alerady_have_account" layoutX="73.0" layoutY="301.0" onMouseClicked="#switchScene" text="Do not have a account?" textFill="#ff8000" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

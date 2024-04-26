@@ -1,0 +1,49 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+}
+
+.input{
+    -fx-border: 2px solid transparent;
+    -fx-width: 15em;
+    -fx-height: 2.5em;
+    -fx-padding-left: 0.8em;
+    -fx-outline: none;
+    -fx-overflow: hidden;
+    -fx-background-color: #f3f3f3;
+    -fx-border-radius: 10px;
+    -fx-transition: all 0.5s;
+    -fx-fill: #f2f2f2;
+    -fx-text-fill: #121212;
+}
+
+.input:hover,
+.input:focus {
+    -fx-border: 2px solid #4A9DEC;
+    -fx-box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+    /*-fx-background-color: white;*/
+}
+
+
+.scroll-pane {
+    -fx-background-color: #f0f0f0; 
+}
+
+.scroll-bar:vertical {
+    -fx-background-color:  transparent; 
+}
+
+
+
+.scroll-bar .track {
+    -fx-background-color: #f0f0f0; 
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #ffaa33; 
+}
+
+
+

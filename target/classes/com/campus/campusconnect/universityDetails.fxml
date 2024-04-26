@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="294.0" prefWidth="574.0" style="-fx-background-color: white; -fx-border-color: #e1e1e1; -fx-border-radius: 12px; -fx-background-radius: 12px;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.campus.campusconnect.UniversityDetailsController">
+   <children>
+      <Pane layoutX="13.0" layoutY="146.0" opacity="0.35" prefHeight="91.0" prefWidth="250.0" style="-fx-background-color: #0a88ff; -fx-background-radius: 25px;">
+         <effect>
+            <BoxBlur height="182.91" iterations="3" width="166.23" />
+         </effect>
+      </Pane>
+      <Label layoutX="209.2" layoutY="16.4" prefHeight="45.0" prefWidth="172.0" text="University Details" textFill="#343434" AnchorPane.leftAnchor="208.0" AnchorPane.rightAnchor="194.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <VBox layoutX="256.0" layoutY="77.0" prefHeight="190.0" prefWidth="309.0" spacing="2.0">
+         <children>
+            <Label fx:id="universityName" prefHeight="28.0" prefWidth="250.0" text="Popular Shoe Trends" textAlignment="CENTER" textFill="#572bdd">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="universityAddress" layoutX="20.0" layoutY="170.0" prefHeight="20.0" prefWidth="316.0" text="Makkawala village" textAlignment="CENTER" textFill="#36454f">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <HBox>
+               <children>
+                  <Label prefHeight="20.0" prefWidth="316.0" text="Post Code" textAlignment="CENTER" textFill="#36454f">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="universityPOST" prefHeight="20.0" prefWidth="316.0" text="Dehradun" textAlignment="CENTER" textFill="#36454f">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="20.0" layoutY="82.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="316.0" text="City" textAlignment="CENTER" textFill="#36454f">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="universityCity" prefHeight="20.0" prefWidth="316.0" text="Dehradun" textAlignment="CENTER" textFill="#36454f">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label fx:id="universityState" prefHeight="20.0" prefWidth="316.0" text="Uttarakhand" textAlignment="CENTER" textFill="#36454f">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="universityCountry" prefHeight="20.0" prefWidth="316.0" text="India" textAlignment="CENTER" textFill="#36454f">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label prefHeight="20.0" prefWidth="284.0" text="Contact" textAlignment="CENTER" textFill="#36454f">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="universityContact" prefHeight="20.0" prefWidth="284.0" text="Contact" textAlignment="CENTER" textFill="#36454f">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="20.0" layoutY="148.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="284.0" text="Website" textAlignment="CENTER" textFill="#36454f">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="universityWeb" prefHeight="20.0" prefWidth="284.0" text="Website" textAlignment="CENTER" textFill="#36454f">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <ImageView fx:id="universityImage" fitHeight="159.0" fitWidth="186.0" layoutX="60.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../java/com/campus/campusconnect/images/3D%20illustrations.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

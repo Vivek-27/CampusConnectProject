@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="348.0" prefWidth="293.0" style="-fx-background-radius: 35px; -fx-border-radius: 35px; -fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.campus.campusconnect.ProductController">
+   <children>
+      <Pane layoutX="32.0" layoutY="87.0" prefHeight="97.0" prefWidth="228.0" style="-fx-background-color: blue; -fx-background-radius: 22px;">
+         <children>
+            <Circle fill="#faea02" layoutX="76.0" layoutY="75.0" radius="82.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="98.0" layoutY="51.0" prefHeight="169.0" prefWidth="95.0" style="-fx-background-color: orange; -fx-background-radius: 150px;">
+         <effect>
+            <BoxBlur height="137.03" iterations="2" width="155.51" />
+         </effect>
+      </Pane>
+      <Pane layoutX="99.0" layoutY="243.0" prefHeight="10.0" prefWidth="95.0" style="-fx-background-color: black; -fx-background-radius: 200px;">
+         <effect>
+            <BoxBlur height="24.06" iterations="2" width="117.37" />
+         </effect>
+      </Pane>
+      <AnchorPane layoutX="46.0" layoutY="61.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-background-radius: 15px; -fx-border-radius: 15px;" AnchorPane.bottomAnchor="87.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="43.80000000000001" AnchorPane.topAnchor="60.80000000000001">
+         <children>
+            <ImageView fx:id="image" fitHeight="200.0" fitWidth="272.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/campus/campusconnect/images/—Pngtree—sneakers%20running%20shoes%20bright%20colors_9145044.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Group layoutX="55.0" layoutY="269.0">
+         <children>
+            <Label fx:id="productName" alignment="CENTER" text="Popular Shoe Trends" textAlignment="CENTER" textFill="#572bdd">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="productPrice" alignment="CENTER" layoutX="61.0" layoutY="37.0" text="\$236.00" textAlignment="CENTER" textFill="#572bdd">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group layoutX="250.0" layoutY="42.0">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="#c3c3c3" strokeType="INSIDE" />
+            <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="-13.0" layoutY="-10.0" opacity="0.84" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/vivek/Documents/NetBeansProjects/campusconnect/src/main/java/com/campus/campusconnect/images/bag-svgrepo-com.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="productDetailsBtn" layoutX="42.0" layoutY="42.0">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="#c3c3c3" strokeType="INSIDE" />
+            <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="-11.0" layoutY="-11.0" opacity="0.84" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/vivek/Documents/NetBeansProjects/campusconnect/src/main/java/com/campus/campusconnect/images/Full_screen.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Group>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

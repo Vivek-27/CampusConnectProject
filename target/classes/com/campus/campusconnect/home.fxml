@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" styleClass="mainFxmlClass" stylesheets="@../../../styles/home.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.campus.campusconnect.HomeController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1280.0" opacity="0.54" pickOnBounds="true">
+         <image>
+            <Image url="file:/C:/Users/vivek/Documents/NetBeansProjects/campusconnect/src/main/java/com/campus/campusconnect/images/bg1.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="100.0" layoutY="100.0" prefHeight="660.0" prefWidth="1562.0" style="-fx-background-color: #FFE5B4; -fx-border-color: white; -fx-border-radius: 50px; -fx-background-radius: 50px; -fx-border-width: 6px;" styleClass="wrapper" stylesheets="@../../../styles/home.css" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <Group accessibleText="HomeScreen" layoutX="-244.0" layoutY="-199.0">
+               <children>
+                  <Pane layoutX="267.0" layoutY="215.0" opacity="0.8" prefHeight="132.0" prefWidth="504.0" style="-fx-background-color: #FFAA33; -fx-background-radius: 100px;">
+                     <effect>
+                        <BoxBlur height="144.78" iterations="3" width="124.52" />
+                     </effect>
+                  </Pane>
+                  <HBox alignment="CENTER_LEFT" layoutX="351.0" layoutY="296.0" prefHeight="100.0" prefWidth="949.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="54.0" text="Home" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="310.0" layoutY="50.0" prefHeight="20.0" prefWidth="101.0" text="/Product">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="100.0" prefWidth="242.0" />
+                        <Label prefHeight="56.0" prefWidth="238.0" text="Product List" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="39.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="222.0" layoutY="10.0" prefHeight="100.0" prefWidth="225.0" />
+                        <Label fx:id="usernameHome" alignment="CENTER_RIGHT" layoutX="873.0" layoutY="46.0" prefHeight="19.0" prefWidth="130.0" text="Username" textAlignment="RIGHT">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Pane layoutX="381.0" layoutY="425.0" opacity="0.8" prefHeight="258.0" prefWidth="886.0" style="-fx-background-color: #FFAA33; -fx-background-radius: 100px;">
+                     <effect>
+                        <BoxBlur height="68.52" iterations="3" width="255.0" />
+                     </effect>
+                  </Pane>
+                  <ScrollPane hbarPolicy="NEVER" layoutX="348.0" layoutY="404.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="965.0" style="-fx-background-color: #FFE5B4; -fx-border-color: transparent; -fx-border-width: 0px;" stylesheets="@../../../styles/home.css" vbarPolicy="ALWAYS">
+                     <content>
+                        <Pane prefWidth="949.0" style="-fx-background-color: #FFE5B4; -fx-border-color: transparent; -fx-border-width: 0;" stylesheets="@../../../styles/home.css">
+                           <children>
+                              <AnchorPane id="AnchorPane" layoutX="25.0" layoutY="29.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="258.0" prefWidth="529.0" style="-fx-background-radius: 35px; -fx-border-radius: 35px; -fx-background-color: white;" styleClass="mainFxmlClass">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <children>
+                                    <HBox layoutX="29.0" layoutY="22.0" prefHeight="31.0" prefWidth="480.0">
+                                       <children>
+                                          <Label prefHeight="31.0" prefWidth="192.0" text="Choose Category" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="categoryNameLabel" prefHeight="31.0" prefWidth="314.0" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <GridPane hgap="10.0" layoutX="29.0" layoutY="61.0" prefHeight="169.0" prefWidth="474.0" vgap="10.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <AnchorPane fx:id="textbooksAndEducationalMaterials" style="-fx-background-color: #f2f2f2; -fx-background-radius: 12px; -fx-border-radius: 12px;">
+                                             <children>
+                                                <ImageView fitHeight="73.0" fitWidth="82.0" layoutX="7.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../../java/com/campus/campusconnect/images/icons/notebook-front-gradient.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="electronics" style="-fx-background-color: #f2f2f2; -fx-background-radius: 12px; -fx-border-radius: 12px;" GridPane.columnIndex="1">
+                                             <children>
+                                                <ImageView fitHeight="73.0" fitWidth="82.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../../java/com/campus/campusconnect/images/icons/bulb-front-color.png" />
+                                                   </image></ImageView>
+                                             </children>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="appliances" style="-fx-background-color: #f2f2f2; -fx-background-radius: 12px; -fx-border-radius: 12px;" GridPane.columnIndex="2">
+                                             <children>
+                                                <ImageView fitHeight="73.0" fitWidth="82.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../../java/com/campus/campusconnect/images/icons/headphone-front-premium.png" />
+                                                   </image></ImageView>
+                                             </children>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="sportsAndFitnessEquipment" style="-fx-background-color: #f2f2f2; -fx-background-radius: 12px; -fx-border-radius: 12px;" GridPane.columnIndex="3">
+                                             <children>
+                                                <ImageView fitHeight="73.0" fitWidth="82.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../../java/com/campus/campusconnect/images/icons/gym-front-color.png" />
+                                                   </image></ImageView>
+                                             </children>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="booksAndStationery" layoutX="10.0" layoutY="10.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 12px; -fx-border-radius: 12px;" GridPane.columnIndex="4">
+                                             <children>
+                                                <ImageView fitHeight="73.0" fitWidth="82.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../../java/com/campus/campusconnect/images/icons/scissor-front-color.png" />
+                                                   </image></ImageView>
+                                             </children>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="clothingAndAccessories" layoutX="107.0" layoutY="10.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 12px; -fx-border-radius: 12px;" GridPane.rowIndex="1">
+                                             <children>
+                                                <ImageView fitHeight="73.0" fitWidth="82.0" layoutX="2.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../../java/com/campus/campusconnect/images/icons/tool-front-color.png" />
+                                                   </image></ImageView>
+                                             </children>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="furniture" layoutX="204.0" layoutY="10.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 12px; -fx-border-radius: 12px;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <children>
+                                                <ImageView fitHeight="73.0" fitWidth="82.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../../java/com/campus/campusconnect/images/icons/umbrella-front-color.png" />
+                                                   </image></ImageView>
+                                             </children>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="kitchenwareAndCookware" layoutX="301.0" layoutY="10.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 12px; -fx-border-radius: 12px;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                             <children>
+                                                <ImageView fitHeight="73.0" fitWidth="82.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../../java/com/campus/campusconnect/images/icons/cup-front-color.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></AnchorPane>
+                                          <AnchorPane fx:id="musicalInstruments" layoutX="107.0" layoutY="99.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 12px; -fx-border-radius: 12px;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                             <children>
+                                                <ImageView fitHeight="73.0" fitWidth="82.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../../java/com/campus/campusconnect/images/icons/music-front-color.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></AnchorPane>
+                                          <AnchorPane fx:id="miscellaneous" layoutX="204.0" layoutY="99.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 12px; -fx-border-radius: 12px;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                             <children>
+                                                <ImageView fitHeight="73.0" fitWidth="82.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../../java/com/campus/campusconnect/images/icons/bag-front-color.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></AnchorPane>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                              <GridPane fx:id="grid" gridLinesVisible="true" hgap="5.0" layoutX="10.0" layoutY="302.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="478.0" prefWidth="930.0" vgap="15.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="30.0" left="10.0" right="20.0" top="10.0" />
+                                 </padding>
+                                 <rowConstraints>
+                                    <RowConstraints />
+                                 </rowConstraints>
+                              </GridPane>
+                              <AnchorPane id="AnchorPane" layoutX="578.0" layoutY="29.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="258.0" prefWidth="345.0" style="-fx-background-radius: 35px; -fx-border-radius: 35px; -fx-background-color: white;" styleClass="mainFxmlClass">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </AnchorPane>
+                           </children>
+                        </Pane>
+                     </content>
+                     <styleClass>
+                        <String fx:value="scroll-bar" />
+                        <String fx:value="scroll-pane" />
+                        <String fx:value="thumb" />
+                        <String fx:value="track" />
+                     </styleClass>
+                  </ScrollPane>
+                  <HBox alignment="CENTER_LEFT" layoutX="282.0" layoutY="229.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="56.0" prefWidth="1088.0">
+                     <children>
+                        <Group>
+                           <children>
+                              <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="6.0" layoutY="6.0" opacity="0.87" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../java/com/campus/campusconnect/images/logo.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="63.0" layoutY="14.0" text="CAMPUS CONNECT">
+                                 <font>
+                                    <Font name="Impact" size="23.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Group>
+                        <Pane prefHeight="56.0" prefWidth="145.0" />
+                        <HBox alignment="CENTER" prefHeight="56.0" prefWidth="348.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                           <children>
+                              <Label text="Home" textFill="#ff9500">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="176.0" layoutY="25.0" text="Shop">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label layoutX="194.0" layoutY="25.0" text="Blog">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="246.0" layoutY="25.0" text="Contact">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="universityDetailBtn" alignment="CENTER" onMouseClicked="#toggleUniversityDetails" prefHeight="56.0" prefWidth="236.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <ImageView fx:id="uniImage" fitHeight="54.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label fx:id="uniName" prefHeight="31.0" prefWidth="212.0" text="University">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                        <Pane prefHeight="56.0" prefWidth="27.0" />
+                        <Group onMousePressed="#handleHammBurger">
+                           <children>
+                              <VBox layoutX="31.0" layoutY="-1.0" spacing="7.0">
+                                 <children>
+                                    <Line endX="100.0" fill="WHITE" startX="63.92508316040039" startY="0.19286881387233734" strokeLineCap="ROUND" strokeWidth="3.0" />
+                                    <Line endX="100.0" fill="WHITE" startX="63.92508316040039" startY="0.19286881387233734" strokeLineCap="ROUND" strokeWidth="3.0" />
+                                    <Line endX="100.0" fill="WHITE" startX="63.92508316040039" startY="0.19286881387233734" strokeLineCap="ROUND" strokeWidth="3.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Group>
+                     </children>
+                  </HBox>
+                  <Label layoutX="285.0" layoutY="673.0" rotate="-90.0" text="Scroll to down">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="1250.0" layoutY="377.0" mnemonicParsing="false" onAction="#gettingAllProducts" style="-fx-background-color: transparent;" text="Refresh" textAlignment="CENTER" textFill="#0a88ff">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Group fx:id="addBtn" layoutX="295.0" layoutY="784.0" onMouseClicked="#showAddProduct">
+                     <children>
+                        <Circle fill="#ffe5b7" layoutY="2.638671875" radius="28.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="4.0">
+                           <effect>
+                              <InnerShadow blurType="ONE_PASS_BOX" choke="0.63" height="220.54" radius="111.99" width="229.42" />
+                           </effect>
+                        </Circle>
+                        <Label layoutX="-16.0" layoutY="-29.0" text="+" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="55.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Group>
+                  <AnchorPane id="AnchorPane" fx:id="universityAnchorPane" disable="true" layoutX="800.0" layoutY="312.0" prefHeight="294.0" prefWidth="574.0" visible="false" />
+                  <AnchorPane fx:id="hammBurgerMenu" disable="true" layoutX="1180.0" layoutY="280.0" prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 12px;" visible="false">
+                     <children>
+                        <VBox layoutX="50.0" layoutY="38.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="219.0" text="Profile" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="223.0" prefWidth="200.0" />
+                              <Button mnemonicParsing="false" onMousePressed="#logout" prefHeight="47.0" prefWidth="199.0" style="-fx-background-color: transparent;" text="Logout" textAlignment="CENTER" textFill="#0a88ff">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6700000166893005" green="0.6700000166893005" blue="0.6700000166893005" opacity="0.6796042323112488" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </AnchorPane>
+               </children>
+            </Group>
+            <AnchorPane fx:id="addProductScreen" disable="true" layoutX="241.0" layoutY="-13.0" prefHeight="686.0" prefWidth="707.0" style="-fx-background-color: white; -fx-background-radius: 12px;" visible="false">
+               <children>
+                  <Pane layoutX="46.0" layoutY="152.0" opacity="0.22" prefHeight="302.0" prefWidth="266.0" style="-fx-background-color: #0a88ff; -fx-background-radius: 25px;">
+                     <effect>
+                        <BoxBlur height="182.91" iterations="3" width="72.09" />
+                     </effect>
+                  </Pane>
+                  <Label layoutX="233.0" layoutY="29.0" text="Sell your item" AnchorPane.topAnchor="29.0">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="354.0" layoutY="101.0" spacing="10.0">
+                     <children>
+                        <Group>
+                           <children>
+                              <TextField fx:id="productName" layoutY="18.0" prefHeight="25.0" prefWidth="310.0" promptText="Enter product name" styleClass="input" stylesheets="@../../../styles/home.css" />
+                              <Label text="Item name" />
+                           </children>
+                        </Group>
+                        <HBox prefHeight="12.0" prefWidth="315.0" spacing="10.0">
+                           <children>
+                              <Group>
+                                 <children>
+                                    <Label layoutY="6.0" text="Category" />
+                                    <ComboBox fx:id="comboBoxCategory" layoutY="30.0" prefHeight="25.0" prefWidth="153.0" styleClass="input" stylesheets="@../../../styles/home.css" />
+                                 </children>
+                              </Group>
+                              <Group>
+                                 <children>
+                                    <Label layoutX="-18.0" layoutY="6.0" text="Condition" />
+                                    <ComboBox fx:id="comboBoxCondition" layoutX="-18.0" layoutY="31.0" prefHeight="25.0" prefWidth="147.0" styleClass="input" stylesheets="@../../../styles/home.css" />
+                                 </children>
+                              </Group>
+                           </children>
+                        </HBox>
+                        <Group layoutX="10.0" layoutY="98.0">
+                           <children>
+                              <Label layoutY="6.0" text="Price" />
+                              <Slider fx:id="priceSlider" blockIncrement="25.0" layoutX="4.0" layoutY="26.0" max="3000.0" min="20.0" prefHeight="37.0" prefWidth="311.0" value="235.0" />
+                              <Label fx:id="priceLabel" layoutX="218.0" layoutY="3.0" prefHeight="23.0" prefWidth="74.0" text="₹235.00" textFill="#0a88ff">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Group>
+                        <Group>
+                           <children>
+                              <Label text="Item description" />
+                              <TextArea fx:id="productDesc" layoutY="26.0" prefHeight="65.0" prefWidth="308.0" styleClass="input" stylesheets="@../../../styles/home.css" />
+                           </children>
+                        </Group>
+                        <Group layoutX="10.0" layoutY="194.0">
+                           <children>
+                              <Label text="Address" />
+                              <TextArea fx:id="productAddress" layoutY="26.0" prefHeight="65.0" prefWidth="308.0" styleClass="input" stylesheets="@../../../styles/home.css" />
+                           </children>
+                        </Group>
+                        <Group layoutX="10.0" layoutY="10.0">
+                           <children>
+                              <TextField fx:id="sellerEmail" disable="true" layoutY="18.0" prefHeight="25.0" prefWidth="310.0" promptText="Your Email" styleClass="input" stylesheets="@../../../styles/home.css" />
+                              <Label text="Seller E-mail" />
+                           </children>
+                        </Group>
+                        <Group layoutX="10.0" layoutY="343.0">
+                           <children>
+                              <TextField fx:id="sellerUniversity" disable="true" layoutY="18.0" prefHeight="25.0" prefWidth="310.0" promptText="Your Campus Name" styleClass="input" stylesheets="@../../../styles/home.css" />
+                              <Label text="Your University" />
+                           </children>
+                        </Group>
+                        <Button fx:id="submitProductBtn" mnemonicParsing="false" onAction="#addProduct" prefHeight="43.0" prefWidth="309.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 12px;" text="Submit" textFill="#0a88ff">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Button layoutX="444.0" layoutY="29.0" mnemonicParsing="false" onAction="#hideAddProduct" style="-fx-background-color: transparent;" text="Cancel" textAlignment="CENTER" textFill="#0a88ff" AnchorPane.rightAnchor="21.600000000000044" AnchorPane.topAnchor="29.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <AnchorPane id="AnchorPane" layoutX="37.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="348.0" prefWidth="293.0" style="-fx-background-radius: 35px; -fx-border-radius: 35px; -fx-background-color: white;" styleClass="mainFxmlClass">
+                     <children>
+                        <Pane layoutX="32.0" layoutY="87.0" prefHeight="97.0" prefWidth="228.0" style="-fx-background-color: blue; -fx-background-radius: 22px;">
+                           <children>
+                              <Circle fill="#faea02" layoutX="76.0" layoutY="75.0" radius="82.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="98.0" layoutY="51.0" prefHeight="169.0" prefWidth="95.0" style="-fx-background-color: orange; -fx-background-radius: 150px;">
+                           <effect>
+                              <BoxBlur height="137.03" iterations="2" width="155.51" />
+                           </effect>
+                        </Pane>
+                        <Pane layoutX="99.0" layoutY="243.0" prefHeight="10.0" prefWidth="95.0" style="-fx-background-color: black; -fx-background-radius: 200px;">
+                           <effect>
+                              <BoxBlur height="24.06" iterations="2" width="117.37" />
+                           </effect>
+                        </Pane>
+                        <ImageView fx:id="productImage" fitHeight="216.0" fitWidth="221.0" layoutX="36.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../java/com/campus/campusconnect/images/—Pngtree—sneakers%20running%20shoes%20bright%20colors_9145044.png" />
+                           </image>
+                        </ImageView>
+                        <Group layoutX="55.0" layoutY="269.0">
+                           <children>
+                              <Label fx:id="sampleProductName" text="Popular Shoe Trends" textAlignment="CENTER" textFill="#572bdd">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sampleProductPrice" layoutX="61.0" layoutY="37.0" text="\$236.00" textAlignment="CENTER" textFill="#572bdd">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Group>
+                        <Group layoutX="250.0" layoutY="42.0">
+                           <children>
+                              <Circle fill="WHITE" radius="20.0" stroke="#c3c3c3" strokeType="INSIDE" />
+                              <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="-11.0" layoutY="-11.0" opacity="0.84" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/vivek/Documents/NetBeansProjects/campusconnect/src/main/java/com/campus/campusconnect/images/bag-svgrepo-com.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Group>
+                        <Group layoutX="42.0" layoutY="42.0">
+                           <children>
+                              <Circle fill="WHITE" radius="20.0" stroke="#c3c3c3" strokeType="INSIDE" />
+                              <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="-11.0" layoutY="-11.0" opacity="0.84" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/vivek/Documents/NetBeansProjects/campusconnect/src/main/java/com/campus/campusconnect/images/Full_screen.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Group>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </AnchorPane>
+                  <Group layoutX="86.0" layoutY="528.0">
+                     <children>
+                        <Label layoutY="5.0" text="Select picture for your item" />
+                        <Button layoutX="153.0" layoutY="-1.0" mnemonicParsing="false" onAction="#selectFile" prefHeight="29.0" prefWidth="75.0" style="-fx-background-color: transparent; -fx-border-color: gray; -fx-border-radius: 50px;" text="Select" textFill="#0a88ff">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </Group>
+                  <Label layoutX="112.0" layoutY="476.0" text="Your Item will look like this" textFill="#0a88ff" />
+                  <Label fx:id="selectedFileLabel" layoutX="52.0" layoutY="565.0" prefHeight="17.0" prefWidth="295.0" textAlignment="CENTER" textFill="#0a88ff" wrapText="true" />
+                  <Label fx:id="errorLabel" alignment="TOP_LEFT" layoutX="76.0" layoutY="595.0" prefHeight="43.0" prefWidth="237.0" textFill="RED" />
+               </children>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" height="21.54" radius="12.015" spread="0.17" width="28.52">
+                     <color>
+                        <Color red="0.5157894492149353" green="0.5157894492149353" blue="0.5157894492149353" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="productDetailsAnchorPane" disable="true" focusTraversable="true" layoutX="200.0" layoutY="65.0" visible="false" />
+   </children>
+</AnchorPane>

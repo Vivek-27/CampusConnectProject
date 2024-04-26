@@ -1,0 +1,75 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color:#f3f2f2;
+    -fx-transition: all 0.5s;
+
+}
+
+
+
+.input{
+    -fx-border: 2px solid transparent;
+    -fx-width: 15em;
+    -fx-height: 2.5em;
+    -fx-padding-left: 0.8em;
+    -fx-outline: none;
+    -fx-overflow: hidden;
+    -fx-background-color: #121212;
+    -fx-border-radius: 10px;
+    -fx-transition: all 0.5s;
+    -fx-fill: #f2f2f2;
+    -fx-text-fill: white;
+}
+
+.input:hover,
+.input:focus {
+    -fx-border: 2px solid #4A9DEC;
+    -fx-box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+    /*-fx-background-color: white;*/
+}
+
+
+.inputLabel{
+    -fx-color:#f4f4f4;
+}
+
+.button {
+    -fx-border: none;
+    -fx-display: flex;
+    -fx-padding: 0.75em 1.5em;
+    -fx-background-color: #016aec;
+    -fx-text-fill: #f2f2f2;
+    -fx-font-size: .95em;
+    -fx-line-height: 1rem;
+    -fx-font-weight: 700;
+
+    -fx-text-align: center;
+    -fx-text-transform: uppercase;
+    -fx-vertical-align: middle;
+    -fx-align-items: center;
+    -fx-border-radius: 0.5rem;
+    -fx-user-select: none;
+    -fx-gap: 0.75rem;
+    -fx-box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+    -fx-transition: all 0.6s ease;
+}
+
+.button:hover {
+    -fx-box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
+}
+
+.button:focus,
+.button:active {
+    -fx-opacity: 0.85;
+    -fx-box-shadow: none;
+}
+
+
+.left_wrapper{
+    -fx-background-color: black;
+}
+
+
